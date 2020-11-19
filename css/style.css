@@ -8,12 +8,11 @@ body {
 }
 .ico {
 	margin: 0px auto;
-	width: 535px;
 }
 .ico img {
 	margin: 30px;
-	width: 55px;
-	height: 55px;
+	width: 50px;
+	height: 50px;
 }
 
 .ico img:hover {
