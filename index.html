@@ -37,7 +37,7 @@
         <ul class="nav navbar-nav navbar-right">
          <li><a href="#about" class="page-scroll">About</a></li>
          <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-         <li><a href="#contact" class="page-scroll">contact</a></li>
+         <li><a href="#contact" class="page-scroll">Contact</a></li>
         </ul>
       </div>
 
@@ -47,7 +47,11 @@
 
     <!-- jumbotron -->
     <div class="jumbotron text-center">
+<<<<<<< HEAD
+      <img src="img/h.jpg" class="img-circle">
+=======
       <img src="img/h.JPG" class="img-circle">
+>>>>>>> d4fe0c7ef0a91c020da14285d228603a787f8b4c
       <h1>Hasbi Setiawan</h1>
       <p>Web Developer | Designer</p>
     </div>
@@ -91,6 +95,7 @@
   <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="row">
+
         <div class="col-sm-12 text-center">
         	<div id="ru" class="col-sm-6">
       <a class="red" href="https://www.instagram.com/hstiawan94"><img src="img/ico/instagram.png" width="40"></a>
@@ -100,17 +105,35 @@
       <a class="red" href="http://wa.me/+6282340663788"><img src="img/ico/whatsapp.png" width="40"></a>
       <a class="red" href="https://www.youtube.com/channel/UCvzfrUZG8ZoUAJbMVK6mpvQ"><img src="img/ico/youtube.png" width="40"></a>
         	</div>
+<<<<<<< HEAD
+
+=======
+>>>>>>> d4fe0c7ef0a91c020da14285d228603a787f8b4c
           <h2>Portfolio</h2>
           <hr>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <a href="" class="thumbnail">
+          <a href="img/portfolio/1.jpg" class="thumbnail">
             <img src="img/portfolio/1.jpg">
           </a>
         </div>
         <div class="col-sm-4">
+<<<<<<< HEAD
+          <a href="img/portfolio/2.jpg" class="thumbnail">
+            <img src="img/portfolio/2.jpg">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="img/portfolio/3.jpg" class="thumbnail">
+            <img src="img/portfolio/3.jpg">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="img/portfolio/4.jpg" class="thumbnail">
+            <img src="img/portfolio/4.jpg">
+=======
           <a href="" class="thumbnail">
             <img src="img/portfolio/2.JPG">
           </a>
@@ -123,15 +146,16 @@
         <div class="col-sm-4">
           <a href="" class="thumbnail">
             <img src="img/portfolio/4.JPG">
+>>>>>>> d4fe0c7ef0a91c020da14285d228603a787f8b4c
           </a>
         </div>
         <div class="col-sm-4">
-          <a href="" class="thumbnail">
+          <a href="img/portfolio/5.jpg" class="thumbnail">
             <img src="img/portfolio/5.jpg">
           </a>
         </div>
         <div class="col-sm-4">
-          <a href="" class="thumbnail">
+          <a href="img/portfolio/6.jpg" class="thumbnail">
             <img src="img/portfolio/6.jpg">
           </a>
         </div>
@@ -145,34 +169,34 @@
     <div class="container">
       <div class="row">
       <div class="col-sm-12 text-center">
-        <h2>contact</h2>
+        <h2>Contact</h2>
         <hr>
       </div>
       <div class="row">
-        <div class="col-sm-12">
-          <form>
+        <div class="col-sm-12" id="form-margin">
+          <form action="kirim.php" method="post">
           <div class="form-group">
             <label for="nama">Nama</label>
-            <input type="text" id="nama" class="form-control" placeholder="masukan nama">
+            <input name="nama" type="text" id="nama" class="form-control" placeholder="masukan nama">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="masukan email">
+            <input name="email" type="email" id="email" class="form-control" placeholder="masukan email">
           </div>
           <div class="form-group">
             <label for="telp">No Telepon</label>
-            <input type="telp" id="telp" class="form-control" placeholder="masukan telepon">
+            <input name="telepon" type="telp" id="telp" class="form-control" placeholder="masukan telepon">
           </div>
-          <select class="form-control">
+          <select name="kategory" class="form-control">
             <option>--  pilih kategory  --</option>
             <option>web development</option>
             <option>web design</option>
           </select>
           <div class="form-group">
-            <label for="pesan">pesan</label>
-            <textarea class="form-control" rows="8" placeholder="masukan pesan"></textarea>
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" class="form-control" rows="8" placeholder="masukan pesan"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">kirim pesan</button>
+          <button name="kirim" type="submit" class="btn btn-primary">kirim pesan</button>
         </form>
         </div>
       </div>
