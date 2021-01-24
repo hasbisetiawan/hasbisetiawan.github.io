@@ -69,6 +69,25 @@ section {
 	background-color: #eee;
 }
 
+div#ru {
+	animation: 6s buka forwards;
+	opacity: 0;
+}
+
+@keyframes buka {
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+
+#form-margin {
+	margin-left: 20px;
+}
+
 .portfolio .thumbnail {
 	opacity: 0;
 	transition: .5s;
