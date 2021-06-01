@@ -5,6 +5,8 @@ html {
 body {
 	margin-bottom: 100px;
 	margin-top: 30px;
+	background-color: #222;
+	color: #949494;
 }
 
 .red img {
@@ -63,10 +65,11 @@ hr {
 
 section {
 	min-height: 600px;
+	background-color: #222222;
 }
 
 .portfolio {
-	background-color: #eee;
+	background-color: #777;
 }
 
 div#ru {
