@@ -22,7 +22,7 @@ body {
 .jumbotron {
 	background-image: url('../img/2.jpg');
 	background-attachment: fixed;
-	background-position: 0 -270px;
+	background-position: 0 -265px;
 	background-size: cover;
 	color: #eaeaea;
 	overflow: hidden;
@@ -69,7 +69,11 @@ section {
 }
 
 .portfolio {
-	background-color: #777;
+	background-image: url('../img/1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	color: #eaeaea;
+	overflow: hidden
 }
 
 div#ru {
