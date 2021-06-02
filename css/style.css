@@ -56,14 +56,23 @@ hr {
 .pKanan {
 	transform: translate(50px, 0);
 }
+.pKanan:hover {
+	transform: translate(50px, 0);
+	color: white;
+}.pKiri:hover {
+	transform: translate(50px, 0);
+	color: white;
+}
 
 .pKiri.pMuncul, .pKanan.pMuncul {
 	opacity: 1;
 	transform: translate(0,0);
 }
 
+.about {
+	height: cover;
+}
 section {
-	min-height: 600px;
 	background-color: #222222;
 }
 
@@ -110,10 +119,76 @@ footer {
 	background-color: #333;
 	position: absolute;
 	width: 100%;
-	height: 100px;
+	height: 65px;
 	bottom: 0;
 	padding-top: 30px;
 }
 footer p {
+	line-height: 5px;
 	color: #aaa;
+}
+
+/*animasi laut*/
+ .white{
+	 width: 100%;
+	 height: 200px;
+	 background: white;
+   
+}
+
+.image{
+   position: relative;
+   display: flex;
+   padding: 90px;
+   justify-content: center;
+
+}
+
+#container{
+   width: 100%;
+   position: absolute;
+   bottom: -8px;
+   overflow: hidden;
+
+}
+
+#container svg{
+   width: 200%;
+   position: relative;
+   animation: move-left 4s linear infinite;
+   
+}
+
+@keyframes move-left{
+   0%{
+       left: 0%;
+   }
+   100%{
+       left: -100%;
+   }
+   
+}
+
+.white2{
+	position: relative;
+	bottom: -180px;
+	 width: 100%;
+	 height: 80px;
+	 background: #f1f1f1;
+   
+}
+
+#container2{
+   position: relative;
+   width: 100%;
+   bottom: -190px;
+   overflow: hidden;
+
+}
+
+#container2 svg{
+   width: 200%;
+   position: relative;
+   animation: move-left 4s linear infinite;
+   
 }
