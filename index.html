@@ -96,9 +96,9 @@
             <div class="box">
 
               <div class="text" style="margin: 10px 10px;">
-                <p class="pKiri" style="font-size: 30px;">Hello, I am Hasbi</p>
+                <p class="pKiri" style="font-size: 25px;">Hello, I am Hasbi</p>
                 <p class="pKiri">Hallo Nama Saya Hasbi Setiawan, Saya adalah seorang Web Developer dan juga Designer, Saya telah menguasi beberapa design digital dan juga web. </p>
-                <p class="pKiri">Saya menyukai dunia Teknologi informasi karna perkembangan saat ini semakin pesat yang mengharuskan untuk belajar dan menyukai Teknologi informasi, selain itu saya juga hobi dalam Sky photography dan Nature photography.</p>
+                <p class="pKiri">Saya menyukai dunia Teknologi informasi karna perkembangan saat ini semakin pesat yang mengharuskan untuk belajar dan menyukai teknologi informasi, selain itu saya juga hobi dalam Astronomi dan sky photography.</p>
                <!--  <p class="pKiri">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." ~ Martin Fowler</p> -->
             </div>
               
@@ -157,23 +157,23 @@
 
         <div class="col-sm-6">
         <div class="box">
-          <img class="thumbnail" src="img/jember.jpg">
+          <img class="thumbnail" src="img/tentang/jember.jpg">
             <p  class="pKanan" style="margin: 5px 5px;">Saya asal jember, kota jember adalah tanah kelahiran saya sekaligus tempat saya menuntut ilmu, kota yg terletak di provinsi jawa timur, indonesia.</p> 
         </div>
         </div>
         <div class="col-sm-6">
         <div class="box">
-          <img class="thumbnail" src="img/smk.jpg">
+          <img class="thumbnail" src="img/tentang/smk.jpg">
             <p class="pKanan" style="margin: 5px 5px;">
-            Saya siswa kelas 3 sekolah menengah kejuruan smk baitul hikmah, dan saya mengambil jurusan multimedia.<br><br>Sekolah kami berada di kecamatan tempurejo kabupaten jember.
+            Saya siswa kelas 3 sekolah menengah kejuruan smk baitul hikmah, dan saya mengambil jurusan multimedia.<br>Sekolah kami berada di kecamatan tempurejo kabupaten jember.
           </p> 
         </div>
         </div>
         <div class="col-sm-3"></div>
         <div class="col-sm-6" style="top: -50px;">
         <div class="box">
-          <img class="thumbnail" src="img/unej.jpg">
-            <p class="pKanan" style="margin: 5px 5px;">Saya yang sebentar lagi mau meneruskan pendidikan ke universitas tujuan saya, UNEJ Universitas Negri Jember di Fakultas ilmu komputer ~ Informatika yang merupakan univ tertua di kota jember.<br><br>Saya berharap tahun depan bisa keterima dan juga moga dapat teman-teman yang baik.</p>
+          <img class="thumbnail" src="img/tentang/unej.jpg">
+            <p class="pKanan" style="margin: 5px 5px;">Saya yang sebentar lagi mau meneruskan pendidikan ke universitas tujuan saya, UNEJ Universitas Negri Jember di Fakultas ilmu komputer ~ Informatika yang merupakan univ tertua di kota jember.<br>Saya berharap tahun depan bisa keterima dan juga moga dapat teman-teman yang baik di sana.</p>
         </div>
         </div>
         <div class="col-sm-3"></div>
@@ -278,6 +278,9 @@
       </div>
       <div class="col-sm-5 col-sm-offset-1">
         <div class="box">
+        <div class="alert alert-primary btn-alert" style="color: #337ab7; display: none;" role="alert">
+          Pesan anda berhasil dikirim
+        </div>
           <form style="margin: 10px;" name="portfolio-contact">
           <div class="form-group">
             <label for="nama">Nama</label>
@@ -291,14 +294,19 @@
             <label for="pesan">Pesan</label>
             <textarea name="pesan" class="form-control" rows="8" placeholder="masukan pesan" style=" height: 80px;"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">kirim pesan</button>
+          <button type="submit" class="btn btn-primary btn-kirim">kirim pesan</button>
+
+          <button class="btn btn-primary btn-loading" type="button" disabled style="display: none;">
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Loading...
+          </button>
         </form>
       </div>
         </div>
         <div class="col-sm-5">
           <div class="box">
-          <p class="pKanan" style="margin: 10px 10px;">I'm very happy to share knowledge. If you want to ask something about IT, productivity,
+          <p class="pKanan">I'm very happy to share knowledge. If you want to ask something about IT, productivity,
 For hiring, business, or collaboration please contact me via email (Kisama2494@gmail.com</p>
+          <p class="pKanan" style="margin: 10px 10px;">our organization <a style="text-decoration: none; color: green;" href="https://www.jember1337.tk/">Jember1337</a> more can visit the page</p>
           </div>
         </div>
     </div>
@@ -311,7 +319,7 @@ For hiring, business, or collaboration please contact me via email (Kisama2494@g
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-12 text-center"></div>
-      <p>&copy; copyright 2020 | built by. <a href="https://www.instagram.com/hstiawan94">Hasbi Setiawan</a>.</p>
+      <p>&copy; copyright 2021 | built by. <a href="https://www.instagram.com/hstiawan94">Hasbi Setiawan</a>.</p>
     </div>
   </div>
   </footer>
@@ -326,9 +334,16 @@ For hiring, business, or collaboration please contact me via email (Kisama2494@g
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwct8XS85l_RXi0YegL47FoMjCufeqvYdX6-omrvz5if5su1u2s7uqh6PNGonEv_-t8/exec';
         const form = document.forms['portfolio-contact'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnKirim = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.btn-alert');
 
         form.addEventListener('submit', e => {
           e.preventDefault();
+          // ketika tombol submit diklik
+          // tampilkan tombol loading, hilangkan tombol kirim
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
