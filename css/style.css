@@ -2,11 +2,8 @@ html {
 	position: relative;
 }
 
-@font-face {
-         font-family: "Font com"; src: url('font/comic.ttf');
-         }
 body {
-	font-family: font  com;
+	font-family: 'Comic Neue', cursive;
 	margin-bottom: 100px;
 	margin-top: 30px;
 	background-color: #222;
