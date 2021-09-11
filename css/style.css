@@ -2,6 +2,7 @@ html {
 	position: relative;
 }
 body {
+	font-family: cursive;
 	margin-bottom: 100px;
 	margin-top: 30px;
 	background-color: #222;
@@ -80,7 +81,7 @@ div #ru {
 
 .box img {
     float: left;
-    height: 200px;
+    height: 150px;
     margin:10px;
     box-shadow: 0 0 6px rgba(58, 57, 68, 0.2);
 }
@@ -91,7 +92,7 @@ div #ru {
 }
 
 .pKiri, .pKanan {
-	font-size: 18px;
+	font-size: 15px;
 	opacity: 0;
 	transform: translate(-50px, 0);
 	transition: 1s;
@@ -166,11 +167,10 @@ footer p {
 
 
 .glo1 {
-	margin-bottom: -4px;
+	margin-bottom: -5px;
 	margin-top: 200px;
 }
 .glo3,.glo2,.glo1 {
-	margin-bottom: -1px;
 	width: 100%;
   	position: relative;
    	overflow: hidden;
@@ -179,6 +179,9 @@ footer p {
 	margin-top: -1px;
 	margin-bottom: -30px;
 	transform: rotate(180deg);
+}
+.glo3 {
+	margin-bottom: -1px;
 }
 .glo3 svg,.glo2 svg,.glo1 svg {
 	overflow: hidden;
