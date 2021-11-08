@@ -395,18 +395,6 @@
         </section>
         <!-- akhir footer -->
 
-                    
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwct8XS85l_RXi0YegL47FoMjCufeqvYdX6-omrvz5if5su1u2s7uqh6PNGonEv_-t8/exec';
-        const form = document.forms['portfolio-contact'];
-
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        });
-    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
  
