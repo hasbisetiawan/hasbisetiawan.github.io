@@ -51,3 +51,10 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 });
+
+// memindahkan input user ke modal dialog input
+function otheremail() {
+  var input = document.getElementById("userInput").value;
+  var tampil = document.getElementById("email");
+  tampil.value = input;
+}
