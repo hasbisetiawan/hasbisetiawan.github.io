@@ -58,3 +58,8 @@ function otheremail() {
   var tampil = document.getElementById("email");
   tampil.value = input;
 }
+function otheremail2() {
+  var input = document.getElementById("userInput2").value;
+  var tampil = document.getElementById("email");
+  tampil.value = input;
+}
