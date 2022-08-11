@@ -94,6 +94,9 @@ body {
 .dropdown-menu.show {
     background: var(--white);
 }
+.dropdown-divider {
+    border-top: 1px solid rgba(0,0,0,.15);
+}
 .dropdown-menu a {
     color: var(--gray-dark)
 }
