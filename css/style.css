@@ -29,6 +29,10 @@
 .dark .navbar-dark {
     color: var(--black);
 }
+.dark .dropdown-menu a:hover {
+    background-color: var(--light);
+    color: var(--gray-dark);
+}
 body {
     color: var(--gray-dark);
 	font-family: 'Poppins', sans-serif;
@@ -83,7 +87,16 @@ body {
     font-size: 1.2em;
     color: var(--primary);
 }
-.row .textBox a,
+.row .textBox .btn,
+.form-control {
+    border: 1px solid var(--primary);
+}
+.dropdown-menu.show {
+    background: var(--white);
+}
+.dropdown-menu a {
+    color: var(--gray-dark)
+}
 .card-body .go,
 .contact-link a {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
