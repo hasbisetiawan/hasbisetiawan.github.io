@@ -9,7 +9,7 @@ themeSwitch.onclick = function(){
 }
 
 // disable klik kanan image 
-$('img').bind('contextmenu', function(e){
+$('.dis img').bind('contextmenu', function(e){
       return false;
   });
 
