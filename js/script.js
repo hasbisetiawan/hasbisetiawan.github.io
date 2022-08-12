@@ -6,20 +6,7 @@ themeSwitch.onclick = function(){
   themeSwitch.classList.toggle('active');
   body.classList.toggle('dark');
   navbar.classList.toggle('navbar-dark');
-};
-
-// disable klik kanan image 
-$('.dis img').bind('contextmenu', function(e){
-      return false;
-  });
-
-//  disable copas text
-  $(function(){ //document.ready function
-     $(document).on(&quot;contextmenu&quot;,function(e){
-          return false;
-      });
-  });
-
+}
 
 // elmen pada saat link di klik
 $('.page-scroll').on('click', function(e){
