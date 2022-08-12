@@ -232,6 +232,9 @@ body {
 .modal-footer {
     padding: 0.75rem 0;
 }
+.modal-body img {
+    width: -webkit-fill-available;
+}
 .form-control {
     border: 1px solid var(--primary);
 }
