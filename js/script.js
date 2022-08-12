@@ -6,7 +6,7 @@ themeSwitch.onclick = function(){
   themeSwitch.classList.toggle('active');
   body.classList.toggle('dark');
   navbar.classList.toggle('navbar-dark');
-}
+};
 
 // disable klik kanan image 
 $('.dis img').bind('contextmenu', function(e){
