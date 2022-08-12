@@ -13,6 +13,14 @@ $('img').bind('contextmenu', function(e){
       return false;
   });
 
+//  disable copas text
+  $(function(){ //document.ready function
+     $(document).on(&quot;contextmenu&quot;,function(e){
+          return false;
+      });
+  });
+
+
 // elmen pada saat link di klik
 $('.page-scroll').on('click', function(e){
   // ambil isi href
