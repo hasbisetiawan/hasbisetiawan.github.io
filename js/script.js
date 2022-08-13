@@ -8,6 +8,11 @@ themeSwitch.onclick = function(){
   navbar.classList.toggle('navbar-dark');
 }
 
+// disable klik kanan pada gambar
+$('img').bind('contextmenu', function(e){
+    return false;
+});
+
 // elmen pada saat link di klik
 $('.page-scroll').on('click', function(e){
   // ambil isi href
