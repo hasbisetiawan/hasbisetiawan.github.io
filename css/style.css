@@ -33,15 +33,25 @@
     background-color: var(--light);
     color: var(--gray-dark);
 }
+
 body {
-    color: var(--gray-dark);
-	font-family: 'Poppins', sans-serif;
-	background-color: var(--white);
-	margin: 0px;
-	padding: 0px;
-	font-weight: 400;
-	letter-spacing: 0px;
-	line-height: 1.5;
+display:block;
+-khtml-user-select:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+unselectable:on;
+
+color: var(--gray-dark);
+font-family: 'Poppins', sans-serif;
+background-color: var(--white);
+margin: 0px;
+padding: 0px;
+font-weight: 400;
+letter-spacing: 0px;
+line-height: 1.5;
 }
 
 .navbar {
